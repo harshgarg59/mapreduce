@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.inn.mapr</groupId>
+  <artifactId>mapreduce</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Map Reduce Project</name>
+  <description>Map Reduce Project</description>
+  	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+	<repositories>
+		<repository>
+			<id>Hortonworks Releases</id>
+			<name>Hortonworks HDP</name>
+			<url>http://repo.hortonworks.com/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-common -->
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.7.3.2.5.3.0-37</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-common</artifactId>
+			<version>2.7.3.2.5.3.0-37</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+	</dependencies>
+</project>
