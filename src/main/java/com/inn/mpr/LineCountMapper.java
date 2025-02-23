@@ -1,4 +1,4 @@
-package com.inn.mapr.linec;
+package com.inn.mpr;
 
 
 import java.io.IOException;
@@ -8,9 +8,9 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
 
-public class LineCoutMapper extends Mapper<Object, Text, Text, LongWritable> {
+public class LineCountMapper extends Mapper<Object, Text, Text, LongWritable> {
 	
-	private static final Logger log = Logger.getLogger(LineCoutMapper.class);
+	private static final Logger log = Logger.getLogger(LineCountMapper.class);
 
 	@Override
 	public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
